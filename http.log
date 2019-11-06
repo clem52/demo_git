@@ -1,0 +1,92 @@
+Script started on Sun Nov  3 18:09:14 2019
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ script loghttp.log[C[C[C[C[C[C[C[C[C[C[Ctart script loghhtp.log[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Ploghttp.log[C[C[C[C[C[C[C[C[C[Ccurl http://localhost:7001/Hw3/MyServlet
+NEW
+bash-3.2$ curl http://localhost:7001/Hw3/MyServlet -v 
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 7001 (#0)
+> GET /Hw3/MyServlet HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.64.1
+> Accept: */*
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 03 Nov 2019 17:09:21 GMT
+< Content-Length: 4
+< Content-Type: text/html; charset=ISO-8859-1
+< Set-Cookie: JSESSIONID=-TkyPhzBWqvhXXagsfVVm6OuXWyf-mm5J6dZwd8_J0JHyL2R2HHd!-859306876; path=/; HttpOnly
+< 
+NEW
+* Connection #0 to host localhost left intact
+* Closing connection 0
+bash-3.2$ u[Kcurl )v[K[K[K http://localhost:7001/Hw3/MyServlet -v [K -v -b "JSESSIONID=-TkyPhzBWqvhXXagsfVVm6OuXWyf-mm5J6dZwd8_J0JHyL2R2H Hd"
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 7001 (#0)
+> GET /Hw3/MyServlet HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.64.1
+> Accept: */*
+> Cookie: JSESSIONID=-TkyPhzBWqvhXXagsfVVm6OuXWyf-mm5J6dZwd8_J0JHyL2R2HHd
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 03 Nov 2019 17:09:34 GMT
+< Content-Length: 20
+< Content-Type: text/html; charset=ISO-8859-1
+< Set-Cookie: JSESSIONID=-TkyPhzBWqvhXXagsfVVm6OuXWyf-mm5J6dZwd8_J0JHyL2R2HHd!-859306876; path=/; HttpOnly
+< 
+WAITING FOR PAYMENT
+* Connection #0 to host localhost left intact
+* Closing connection 0
+bash-3.2$ curl http://localhost:7001/Hw3/MyServlet -v -b "JSESSIONID=-TkyPhzBWqvhXXagsfVVm6OuXWyf-mm5J6dZwd8_J0JHyL2R2HHHd"
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 7001 (#0)
+> GET /Hw3/MyServlet HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.64.1
+> Accept: */*
+> Cookie: JSESSIONID=-TkyPhzBWqvhXXagsfVVm6OuXWyf-mm5J6dZwd8_J0JHyL2R2HHd
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 03 Nov 2019 17:09:35 GMT
+< Content-Length: 10
+< Content-Type: text/html; charset=ISO-8859-1
+< Set-Cookie: JSESSIONID=-TkyPhzBWqvhXXagsfVVm6OuXWyf-mm5J6dZwd8_J0JHyL2R2HHd!-859306876; path=/; HttpOnly
+< 
+COMPLETED
+* Connection #0 to host localhost left intact
+* Closing connection 0
+bash-3.2$ curl http://localhost:7001/Hw3/MyServlet -v -b "JSESSIONID=-TkyPhzBWqvhXXagsfVVm6OuXWyf-mm5J6dZwd8_J0JHyL2R2HHHd"
+*   Trying ::1...
+* TCP_NODELAY set
+* Connected to localhost (::1) port 7001 (#0)
+> GET /Hw3/MyServlet HTTP/1.1
+> Host: localhost:7001
+> User-Agent: curl/7.64.1
+> Accept: */*
+> Cookie: JSESSIONID=-TkyPhzBWqvhXXagsfVVm6OuXWyf-mm5J6dZwd8_J0JHyL2R2HHd
+> 
+< HTTP/1.1 200 OK
+< Date: Sun, 03 Nov 2019 17:09:36 GMT
+< Content-Length: 4
+< Content-Type: text/html; charset=ISO-8859-1
+< Set-Cookie: JSESSIONID=H3IyPlZwLr4w_l1ctXCNCFFnMZW_jpLb8cLCgdsSkUM7OXXPYhPT!-859306876; path=/; HttpOnly
+< 
+NEW
+* Connection #0 to host localhost left intact
+* Closing connection 0
+bash-3.2$ exit()
+> exit()[K[K
+bash: syntax error near unexpected token `exit'
+bash-3.2$ ls
+Applications		Library			Public			ookie
+Creative Cloud Files	Movies			eclipse			oraInventory
+Desktop			Music			eclipse-workspace	task2.log
+Documents		PacketTracer7		http.log		test.log
+Downloads		Pictures		loghttp.log
+bash-3.2$ 
